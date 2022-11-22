@@ -11,8 +11,6 @@ export const Container = styled.div`
     border-radius: 6px;
     padding: 0 15px;
 
-    color: var(--color-text);
-
     input {
         width: 100%;
         height: 100%;
