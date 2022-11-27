@@ -32,6 +32,9 @@ export default createGlobalStyle`
         250deg, 
         var(--color-secondary) -12%, 
         var(--color-tertiary) 114%);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    
     color: var(--color-text);
     /* -webkit-font-smoothing: antialiased;
 
