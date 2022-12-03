@@ -1,11 +1,11 @@
-import { Container } from "./styles";
+import { Container } from './styles';
 import { GRID_SECTION_ROW_SIZE } from '../../pages/Dashboard/styles';
-import { useState } from "react";
-import Profile from "../Profile";
+import { useState } from 'react';
+import { Profile } from '../Profile';
 
 // import { useRef } from "react";
 
-const Card = ({ image }) => {
+export const Card = ({ thumbUrl, title, link, user }) => {
     // const imageRef = useRef();
     const [imageSize, setImageSize] = useState(30);
 
@@ -14,7 +14,7 @@ const Card = ({ image }) => {
         const { height } = event.target;
 
         const GRID_CONTENT_SPAN_SIZE = 4;
-        const size = Math.roud(
+        const size = Math.round(
             (height / GRID_SECTION_ROW_SIZE) + GRID_CONTENT_SPAN_SIZE);
 
        setImageSize(size);
@@ -22,22 +22,22 @@ const Card = ({ image }) => {
 
     return(
         <Container size={imageSize}>
-            <div>
-                <img 
-                    // ref={imageRef}
-                    onLoad={getImageSize} 
-                    src={image} 
-                    alt="" />
+            <a href={link} target='_blank' rel='noreferrer'>
+                <div>
+                    <img 
+                        // ref={imageRef}
+                        onLoad={getImageSize} 
+                        src={thumbUrl} 
+                        alt={title} />
 
-                <p>Banco de dados do sistema financeiro do Banco do Brasil</p>
-            </div>
+                    <p>{title}</p>
+                </div>
 
-            <div>
-                <Profile />
-                <span>Tsunode</span>
-            </div>
+                <div>
+                    <Profile />
+                    <span>{user.name} {user.surname}</span>
+                </div>
+            </a>
         </Container>
     )
 }
-
-export default Card;

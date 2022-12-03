@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-const States = () => {
+export const States = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [users, setUsers] = useState([]);
@@ -19,14 +19,14 @@ const States = () => {
     return(
         <main>
             <form onSubmit={handleSubmit}>
-                    <input type="text" 
+                    <input type='text' 
                     onChange={(event) => setName(event.target.value)}
                 />
-                    <input type="email" 
+                    <input type='email' 
                     onChange={(event) => setEmail(event.target.value)}
                 />
 
-                <button type="submit">Registrar</button>
+                <button type='submit'>Registrar</button>
             </form>
 
             <ul>
@@ -38,5 +38,3 @@ const States = () => {
         </main>
     )
 }
-
-export default States

@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Container = styled.li`
-    grid-row-end: span ${({size}) => size};
+    grid-row-end: span ${({ size }) => size};
     width: 230px;
 
     background: linear-gradient(
@@ -15,14 +15,18 @@ export const Container = styled.li`
 
     padding: 8px;
 
-    > div:nth-of-type(1){
+    > a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    > a > div:nth-of-type(1){
         position: relative;
 
         p {
             position: absolute;
             bottom: 0;
             padding: 16px 12px;
-
         }
 
         img {
@@ -39,8 +43,9 @@ export const Container = styled.li`
 
             background: linear-gradient(180deg, rgba(31, 31, 31, 0.05) -32%, rgba(0, 0, 0, 0.96) 92%);
         }
+    }
 
-        > div:nth-of-type(2) {
+    > a > div:nth-of-type(2) {
             display: flex;
             align-items: center;
             gap: 6px;
@@ -50,6 +55,5 @@ export const Container = styled.li`
             span {
                 font-family: 'Inter';
             }
-        }
     }
 `
