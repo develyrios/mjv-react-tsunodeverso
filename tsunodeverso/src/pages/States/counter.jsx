@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-const States = () => {
+export const States = () => {
     const [count, setCount] = useState(0);
 
     function add(){
@@ -20,5 +20,3 @@ const States = () => {
         </main>
     )
 }
-
-export default States

@@ -1,18 +1,20 @@
+import tsunodeverso from '../../assets/tsunodeverso.svg';
+
 import { Main } from '../../styles/main';
 import { useState } from 'react';
 import { Steps } from './styles';
+import { Input } from '../../components/Input';
+import { Form } from '../../styles/Form';
 
-import tsunodeverso from '../../assets/tsunodeverso.svg';
-import Input from '../../components/Input';
 
-const Register = () => {
+export const Register = () => {
     const [step, setStep] = useState(1);
 
     return (
         <Main>
             <img src={tsunodeverso} alt='Logo Tsunodeverso' />
 
-            <form>
+            <Form>
                 <fieldset>
                     <legend>Faça seu cadastro:</legend>
 
@@ -60,9 +62,7 @@ const Register = () => {
                             </div>
                     }
                 </fieldset>
-            </form>
+            </Form>
         </Main>
     )
 }
-
-export default Register;

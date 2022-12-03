@@ -1,7 +1,7 @@
-import { Container } from "./styles";
+import { Container } from './styles';
 
 
-const Input = ({ id, label, type, name, children }) => {
+export const Input = ({ id, label, type, name, children }) => {
     return(
         <Container>
             <input type={type} name={name} id={id} placeholder=' ' />
@@ -10,5 +10,3 @@ const Input = ({ id, label, type, name, children }) => {
         </Container>
     )
 }
-
-export default Input;

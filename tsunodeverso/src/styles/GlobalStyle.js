@@ -50,5 +50,4 @@ export default createGlobalStyle`
     font-family: 'Montserrat';
     font-size: 1.6rem;
   }
-
 `;
