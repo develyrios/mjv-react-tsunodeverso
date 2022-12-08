@@ -1,10 +1,10 @@
 import tsunodeverso from '../../assets/tsunodeverso.svg';
 
-import { Main } from '../../styles/main';
-import { useState } from 'react';
-import { Steps } from './styles';
-import { Input } from '../../components/Input';
 import { Form } from '../../styles/Form';
+import { Input } from '../../components/Input';
+import { Main } from '../../styles/Main';
+import { Steps } from './styles';
+import { useState } from 'react';
 
 
 export const Register = () => {
