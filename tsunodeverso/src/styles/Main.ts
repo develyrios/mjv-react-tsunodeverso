@@ -13,5 +13,10 @@ export const Main = styled.main`
 
     img {
         max-width: 200px;
+        margin-bottom: 48px
+    }
+
+    a {
+        margin-top: 16px;
     }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Form  = styled.form`
-    max-width: 400px;
+    max-width: 450px;
 
     fieldset {
         border-radius: 10px;
